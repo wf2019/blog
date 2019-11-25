@@ -1,12 +1,12 @@
 const sidebarRe = require('./sidebar');
 
 module.exports = {
-	base: '/',
-	title: '演示站',
-	description: 'Just playing around',
+	base: '/blog-web/',
+	title: '王飞的Blog',
+	description: '王飞的个人博客-Blog',
 	themeConfig: {
+		sidebarDepth: 0, // 禁用嵌套标题链接
 		nav: [
-			{ text: '首页', link: '/' },
 			{ text: '最新资源网', link: 'https://www.zxzyw.net' },
 			{
 				text: '演示网站',

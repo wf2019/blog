@@ -1,11 +1,11 @@
 const sidebar = [
 	['/', '首页'],
 	{
-		title: '商品管理',
+		title: 'GIT',
 		collapsable: true,
 		children: [
-		  ['/goods/', '商品首页'],
-		  ['/goods/add', '新增商品']
+			['/git/install', '安装'],
+			['/git/use', '常用命令']
 		]
 	}
 ]
