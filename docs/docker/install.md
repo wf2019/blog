@@ -44,3 +44,6 @@ yum list docker-ce --showduplicates | sort -r
 # 安装指定版本
 sudo yum install docker-ce-<VERSION_STRING> docker-ce-cli-<VERSION_STRING> containerd.io
 ```
+
+## 镜像加速
+[https://cr.console.aliyun.com](https://cr.console.aliyun.com)
