@@ -40,6 +40,7 @@ services:
     hostname: php-fpm
     volumes:
       - /usr/local/docker/nginx/www:/www
+	  # 用于walle部署的文件存放目录，防止软连接在docker不可用
 	  - /home:/home
     networks:
       - wf-web
