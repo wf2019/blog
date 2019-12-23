@@ -6,6 +6,17 @@
 ## 安装docker-compose
 - [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
 
+## 安装docker-compose(pip3安装，快)
+- 安装pip3
+```sh
+yum -y install python-pip python3-pip
+```
+
+- 安装docker-compose
+```sh
+pip3 install docker-compose
+```
+
 ## Web 环境 Compose
 - 新建文件 `docker-compose.yml`
 - 内容如下：
