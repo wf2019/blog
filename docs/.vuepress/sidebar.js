@@ -25,6 +25,13 @@ const sidebar = [
 			['/composer/install', '安装'],
 			['/composer/command', '常用命令']
 		]
+	},
+	{
+		title: 'Nginx',
+		collapsable: true,
+		children: [
+			['/nginx/project-config', '项目配置']
+		]
 	}
 ]
 module.exports = {sidebar};
