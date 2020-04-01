@@ -51,7 +51,7 @@ services:
     hostname: php-fpm
     volumes:
       - /usr/local/docker/nginx/www:/www
-	  - /home:/home
+      - /home:/home
     networks:
       - wf-web
     restart: always

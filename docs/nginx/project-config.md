@@ -63,7 +63,12 @@ server {
         try_files $uri $uri/ /index.html;
     }
 	# （部署时请删除这段注释）如果访问不到，尝试取消结尾的  /
+	#  php接收IP，$_server['HTTP_X_REAL_IP']
     location /api/ {
+		proxy_set_header X-Real-IP $remote_addr;
+		proxy_set_header X-Real-Port $remote_port;
+		proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+		
         proxy_pass http://php:9568;
     }
 }
